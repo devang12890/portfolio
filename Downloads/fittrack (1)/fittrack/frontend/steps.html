@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Log Steps | FitTrack</title>
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+<div class="page-container">
+    <h2>Log Your Steps</h2>
+
+    <form id="step-form">
+        <label for="steps">Steps Today</label>
+        <input type="number" id="steps" required placeholder="e.g. 5000">
+
+        <button type="submit">Save Steps</button>
+    </form>
+
+    <div class="history-box">
+        <h3>Step History</h3>
+        <div id="step-history"></div>
+    </div>
+
+    <div class="nav-links">
+        <div class="nav-btn" onclick="window.location.href='dashboard.html'">← Back to Dashboard</div>
+    </div>
+
+    <script src="js/steps.js"></script>
+</div>
+</body>
+</html>

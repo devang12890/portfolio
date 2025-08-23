@@ -1,0 +1,657 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  background-color: #1c1b2f;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  width: 90%;
+  max-width: 400px;
+  background: #2a2943;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.2);
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #a182ff;
+}
+
+form input {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 10px;
+  background: #38375a;
+  color: #ffffff;
+  font-size: 1em;
+}
+
+.arrow-btn {
+  background-color: #a182ff;
+  color: white;
+  border: none;
+  padding: 15px 20px;
+  border-radius: 50%;
+  font-size: 1.5em;
+  display: block;
+  margin: 20px auto 0;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.arrow-btn:hover {
+  background-color: #b79bff;
+}
+.saved-msg {
+  color: lightgreen;
+  font-size: 0.8em;
+  display: none;
+  margin-top: 5px;
+  text-align: center;
+}
+
+body {
+  background-color: #151322;
+  color: white;
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+.dashboard-container {
+  padding: 20px;
+  max-width: 480px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  overflow-y: auto;
+  min-height: 100vh;
+}
+
+.welcome-section h2 {
+  font-size: 1.8em;
+  color: #a182ff;
+}
+
+.welcome-msg {
+  font-size: 1em;
+  color: #ccc;
+  margin-top: 8px;
+}
+
+.body-info {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+.info-card {
+  flex: 1;
+  background-color: #26243d;
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+  position: relative;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.info-card:hover {
+  background-color: #2e2c45;
+}
+
+.info-card h3 {
+  color: #b49cff;
+  margin-bottom: 10px;
+}
+
+#height-input, #weight-input {
+  padding: 8px;
+  width: 80px;
+  text-align: center;
+  border: none;
+  border-radius: 8px;
+  font-size: 1em;
+  background: #3e3c5e;
+  color: white;
+  outline: none;
+}
+
+.actions-section h3 {
+  color: #b49cff;
+  margin-bottom: 10px;
+}
+
+.action-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.action-buttons button {
+  padding: 15px;
+  font-size: 1.05em;
+  border: none;
+  border-radius: 10px;
+  background-color: #a182ff;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.action-buttons button:hover {
+  background-color: #b69bff;
+}
+.goal-section {
+  background: #2a2943;
+  padding: 20px;
+  border-radius: 12px;
+  margin-top: 20px;
+}
+
+.goal-section h3 {
+  color: #b49cff;
+  margin-bottom: 10px;
+}
+
+.goal-section select {
+  width: 100%;
+  padding: 12px;
+  border-radius: 10px;
+  font-size: 1em;
+  background-color: #38375a;
+  color: white;
+  border: none;
+}
+
+#goal-output {
+  margin-top: 15px;
+  font-size: 1em;
+}
+
+#goal-output span {
+  color: #a182ff;
+  font-weight: bold;
+}
+.page-container {
+  padding: 25px;
+  max-width: 480px;
+  margin: auto;
+  color: white;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 20px;
+  background: #2a2943;
+  padding: 20px;
+  border-radius: 12px;
+}
+
+form label {
+  font-weight: bold;
+  color: #b49cff;
+}
+
+form input {
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+  background-color: #38375a;
+  color: white;
+  font-size: 1em;
+}
+
+form button {
+  background-color: #a182ff;
+  color: white;
+  padding: 15px;
+  border: none;
+  font-size: 1em;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: 0.3s;
+}
+
+form button:hover {
+  background-color: #b69bff;
+}
+
+.back-link {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.back-link a {
+  color: #a182ff;
+  text-decoration: none;
+  font-weight: bold;
+}
+.history-section {
+  background: #2a2943;
+  padding: 20px;
+  border-radius: 12px;
+}
+
+.history-section h3 {
+  color: #b49cff;
+  margin-bottom: 10px;
+}
+
+#workout-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#workout-list li {
+  padding: 10px;
+  background: #38375a;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  font-size: 0.95em;
+  color: white;
+}
+body {
+  background-color: #151322;
+  color: white;
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.page-container {
+  padding: 25px;
+  max-width: 500px;
+  margin: auto;
+}
+
+h2 {
+  font-size: 1.8em;
+  color: #a182ff;
+  text-align: center;
+}
+
+form {
+  background-color: #2a2943;
+  padding: 20px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+label {
+  font-weight: bold;
+  color: #b49cff;
+}
+
+input {
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+  background-color: #38375a;
+  color: white;
+  font-size: 1em;
+}
+
+button, .nav-btn {
+  background-color: #a182ff;
+  color: white;
+  padding: 14px;
+  border: none;
+  font-size: 1em;
+  border-radius: 10px;
+  cursor: pointer;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+  justify-content: space-between;
+}
+
+.history-box {
+  background-color: #26243d;
+  padding: 20px;
+  border-radius: 12px;
+  margin-top: 20px;
+}
+
+.history-box h3 {
+  color: #b49cff;
+  margin-bottom: 12px;
+}
+
+.history-entry {
+  background-color: #38375a;
+  padding: 12px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.history-entry small {
+  color: #ccc;
+}
+.delete-btn {
+  margin-top: 8px;
+  background-color: #ff4e4e;
+  border: none;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 0.9em;
+}
+.delete-btn {
+  margin-top: 8px;
+  background-color: #ff4e4e;
+  border: none;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 0.9em;
+}
+.page-container {
+  max-width: 600px;
+  margin: auto;
+  padding: 20px;
+  color: white;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+h1 {
+  color: #a182ff;
+  text-align: center;
+}
+
+.info-cards {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px 0;
+  gap: 20px;
+}
+
+.info-card {
+  background-color: #2e2c44;
+  padding: 15px;
+  border-radius: 12px;
+  width: 45%;
+  text-align: center;
+}
+
+.saved-msg {
+  display: none;
+  color: #7affb2;
+  font-size: 0.85em;
+  margin-top: 5px;
+}
+
+.nav-links {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.nav-btn {
+  background-color: #a182ff;
+  padding: 12px;
+  border-radius: 10px;
+  text-align: center;
+  cursor: pointer;
+  font-weight: bold;
+  color: white;
+}
+
+.goal-section {
+  margin-top: 30px;
+  background-color: #2c2a3f;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+select {
+  width: 100%;
+  padding: 10px;
+  background-color: #38375a;
+  color: white;
+  border-radius: 8px;
+  margin-top: 10px;
+}
+
+.macro-summary {
+  background-color: #2a283f;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 12px;
+}
+.history-box {
+  margin-top: 30px;
+  background-color: #2a283f;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.history-entry {
+  background-color: #3d3957;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 8px;
+  color: #fff;
+}
+
+.delete-btn {
+  margin-top: 8px;
+  background-color: #ff4e4e;
+  border: none;
+  color: white;
+  padding: 6px 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 0.9em;
+}
+canvas {
+  background-color: #2a283f;
+  border-radius: 12px;
+  margin-top: 20px;
+  padding: 10px;
+}
+/* Reuse from history-entry and delete-btn */
+
+input[type="number"] {
+  padding: 10px;
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  background-color: #3a3951;
+  border: 1px solid #5c5c7a;
+  color: white;
+}
+/* ===== Global Reset ===== */
+body {
+  background-color: #1e1b2e;
+  color: #ffffff;
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.page-container {
+  max-width: 600px;
+  margin: auto;
+  padding: 25px 20px;
+}
+
+/* ===== Headings ===== */
+h1, h2, h3 {
+  color: #a182ff;
+  margin-bottom: 12px;
+}
+
+p {
+  color: #e0dede;
+}
+
+/* ===== Buttons & Navigation ===== */
+.nav-links {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin-top: 30px;
+}
+
+.nav-btn, button {
+  background: linear-gradient(135deg, #7b5cff, #7e93f6);
+  color: white;
+  border: none;
+  padding: 12px 16px;
+  border-radius: 12px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.nav-btn:hover,
+button:hover {
+  transform: scale(1.02);
+  box-shadow: 0 4px 15px rgba(161, 130, 255, 0.5);
+}
+
+/* ===== Input Fields ===== */
+input, select {
+  padding: 10px;
+  width: 100%;
+  background-color: #2e2b45;
+  color: white;
+  border: 1px solid #5f5c7b;
+  border-radius: 10px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  font-size: 1rem;
+}
+
+/* ===== Card Sections ===== */
+.info-cards, .macro-summary, .history-box, .goal-section {
+  background-color: #2a273f;
+  border-radius: 12px;
+  padding: 16px;
+  margin-top: 20px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.2);
+}
+
+/* ===== History Entries ===== */
+.history-entry {
+  background-color: #3d3957;
+  padding: 10px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  color: #ffffff;
+  position: relative;
+}
+
+/* ===== Delete Button ===== */
+.delete-btn {
+  background-color: #ff4e4e;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 8px;
+  color: white;
+  font-size: 0.9rem;
+  margin-top: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.delete-btn:hover {
+  background-color: #e43e3e;
+}
+
+/* ===== Saved Message ===== */
+.saved-msg {
+  display: none;
+  color: #7affb2;
+  font-size: 0.85rem;
+  margin-top: 6px;
+}
+
+/* ===== Charts ===== */
+canvas {
+  background-color: #2f2d48;
+  border-radius: 12px;
+  margin-top: 25px;
+  padding: 12px;
+}
+@media screen and (max-width: 600px) {
+  .page-container {
+    padding: 15px;
+  }
+
+  input, select, button, .nav-btn {
+    font-size: 1rem;
+    padding: 10px;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+.switch {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+.switch input {display: none;}
+.slider {
+  background-color: #ccc;
+  width: 40px; height: 20px;
+  border-radius: 20px;
+  position: relative;
+  cursor: pointer;
+}
+.slider:before {
+  content: "";
+  position: absolute;
+  height: 16px; width: 16px;
+  background: white;
+  left: 2px; top: 2px;
+  border-radius: 50%;
+  transition: 0.3s;
+}
+input:checked + .slider:before {
+  transform: translateX(20px);
+}
+.light-mode {
+  background-color: #f7f7f7;
+  color: #1c1c1c;
+}
+.light-mode input, .light-mode .nav-btn {
+  background-color: #e0e0e0;
+  color: #000;
+}

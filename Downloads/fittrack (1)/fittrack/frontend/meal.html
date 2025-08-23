@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Log Meal | FitTrack</title>
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+<div class="page-container">
+    <h2>Log Your Meal</h2>
+
+    <form id="meal-form">
+        <label for="meal">Meal Name</label>
+        <input type="text" id="meal" required placeholder="e.g. Oats, Paneer">
+
+        <label for="calories">Calories Consumed</label>
+        <input type="number" id="calories" required placeholder="e.g. 300">
+
+        <button type="submit">Save Meal</button>
+    </form>
+
+    <div class="history-box">
+        <h3>Meal History</h3>
+        <div id="meal-history"></div>
+    </div>
+
+    <div class="nav-links">
+        <div class="nav-btn" onclick="window.location.href='dashboard.html'">← Back to Dashboard</div>
+        <div class="nav-btn" onclick="window.location.href='workout.html'">← Log Workout</div>
+    </div>
+
+    <script src="js/meal.js"></script>
+</div>
+</body>
+</html>

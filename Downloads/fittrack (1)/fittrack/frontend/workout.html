@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Log Workout | FitTrack</title>
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+<div class="page-container">
+    <h2>Log Your Workout</h2>
+    <form id="workout-form">
+        <label for="exercise">Exercise Name</label>
+        <input type="text" id="exercise" required placeholder="e.g. Push-ups" />
+
+        <label for="calories">Calories Burned</label>
+        <input type="number" id="calories" required placeholder="e.g. 150" />
+
+        <button type="submit">Save Workout</button>
+    </form>
+
+    <div class="history-box">
+        <h3>Workout History</h3>
+        <div id="workout-history"></div>
+    </div>
+
+    <div class="nav-links">
+        <div class="nav-btn" onclick="window.location.href='dashboard.html'">← Back to Dashboard</div>
+        <div class="nav-btn" onclick="window.location.href='meal.html'">→ Log Meal</div>
+    </div>
+</div>
+
+<script src="js/workout.js"></script>
+</body>
+</html>

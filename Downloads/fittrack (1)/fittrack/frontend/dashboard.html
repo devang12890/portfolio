@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>FitTrack Dashboard</title>
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+<div class="page-container">
+    <h1>Hello, <span id="username">User</span></h1>
+    <p>Ready to crush your fitness goals today?</p>
+
+    <div class="info-cards">
+        <div class="info-card">
+            <h3>Height</h3>
+            <div id="height-display" onclick="editField('height')">
+                <span id="height-value">--</span> cm
+            </div>
+            <input type="number" id="height-input" style="display: none;" />
+            <span id="height-saved" class="saved-msg">✓ Saved</span>
+        </div>
+
+        <div class="info-card">
+            <h3>Weight</h3>
+            <div id="weight-display" onclick="editField('weight')">
+                <span id="weight-value">--</span> kg
+            </div>
+            <input type="number" id="weight-input" style="display: none;" />
+            <span id="weight-saved" class="saved-msg">✓ Saved</span>
+        </div>
+    </div>
+
+    <h2>Log Activity</h2>
+    <div class="nav-links">
+        <div class="nav-btn" onclick="window.location.href='workout.html'">Log Workout</div>
+        <div class="nav-btn" onclick="window.location.href='meal.html'">Log Meal</div>
+        <div class="nav-btn" onclick="window.location.href='water.html'">Log Water</div>
+        <div class="nav-btn" onclick="window.location.href='steps.html'">Log Steps</div>
+        <div class="nav-btn" onclick="window.location.href='sleep.html'">Log Sleep</div>
+        <div class="nav-btn" onclick="window.location.href='summary.html'">Weekly Summary</div>
+    </div>
+
+    <div class="goal-section">
+        <h2>Select Your Goal</h2>
+        <select id="goal-select">
+            <option value="">-- Choose Goal --</option>
+            <option value="loss">Weight Loss</option>
+            <option value="maintain">Maintain Weight</option>
+            <option value="gain">Weight Gain</option>
+            <option value="muscle">Muscle Gain</option>
+        </select>
+    </div>
+
+    <div id="goal-output" class="macro-summary" style="display: none;">
+        <h3>Recommended Daily Intake</h3>
+        <p><strong>Calories:</strong> <span id="calories"></span> kcal</p>
+        <p><strong>Protein:</strong> <span id="protein"></span> g</p>
+        <p><strong>Carbs:</strong> <span id="carbs"></span> g</p>
+        <p><strong>Fats:</strong> <span id="fats"></span> g</p>
+    </div>
+
+    <div id="summary-section" class="macro-summary" style="display: none;">
+        <h3>Today's Summary</h3>
+        <p><strong>Calories Burned:</strong> <span id="calories-burned">0</span> kcal</p>
+        <p><strong>Calories Consumed:</strong> <span id="calories-consumed">0</span> kcal</p>
+        <p><strong>Total Steps:</strong> <span id="step-summary">0</span> steps</p>
+        <p><strong>Total Sleep:</strong> <span id="sleep-summary">0</span> hrs</p>
+
+    </div>
+</div>
+
+<script src="js/dashboard.js"></script>
+</body>
+</html>
+
+

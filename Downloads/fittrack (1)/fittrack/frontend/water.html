@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log Water | FitTrack</title>
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+<div class="page-container">
+    <h2>Log Your Water Intake</h2>
+
+    <form id="water-form">
+        <label for="water">Amount (ml)</label>
+        <input type="number" id="water" required placeholder="e.g. 250 ml">
+
+        <button type="submit">Save Water Intake</button>
+    </form>
+
+    <div class="history-box">
+        <h3>Water Intake History</h3>
+        <div id="water-history"></div>
+    </div>
+
+    <div class="nav-links">
+        <div class="nav-btn" onclick="window.location.href='dashboard.html'">← Back to Dashboard</div>
+        <div class="nav-btn" onclick="window.location.href='meal.html'">← Log Meal</div>
+    </div>
+
+    <script src="js/water.js"></script>
+</div>
+</body>
+</html>
