@@ -3,14 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Devang Awasthi | Portfolio</title>
-    <meta name="description" content="Portfolio of Devang Awasthi, Backend Developer skilled in Java, Spring, and modern web technologies.">
-    <link rel="stylesheet" href="style.css"> 
+    <title>Devang Awasthi - Portfolio</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
 <header>
-  <nav class="main-nav" aria-label="Main Navigation">
+  <nav class="main-nav">
     <div class="nav-logo">Devang</div>
     <ul class="nav-menu">
       <li><a href="#home">Home</a></li>
@@ -19,52 +20,38 @@
       <li><a href="#projects">Projects</a></li>
       <li><a href="#contact" class="btn-contact">Contact</a></li>
     </ul>
-    <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+    <div class="nav-toggle" id="nav-toggle">
       <span></span>
       <span></span>
       <span></span>
-    </button>
+    </div>
   </nav>
 </header>
 
-<main>
+
+
     <section id="home" class="hero">
         <div class="hero-content">
-            <h1>Hi, I'm <span class="name">Devang Awasthi</span></h1>
+            <h1> Hi,  I'm <span class="name">Devang Awasthi</span></h1>
             <h2>Backend Developer</h2>
-            <p>I develop modern user interfaces and web applications.</p>
+            <p>I develop modern , user interfaces and web applications.</p>
         </div>
+
     </section>
 
     <section id="about" class="about">
         <h2 class="section-title">About Me</h2>
         <div class="about-content">
             <div class="about-text">
-                <p>Hello! I'm a skilled web developer with experience in Java and expertise in frameworks like Spring. I am a quick learner and love collaborating to build efficient, scalable solutions that solve real-world problems.</p>
+                <p>Hello! I'm a skilled web developer with experience in java , and expertise in framework like spring . I am a quick learner and want someone to collaborate with someone to make efficient, scalable, that solve real world problem.</p>
                 <p>When I'm not coding, you can find me exploring new technologies, contributing to open source, or enjoying outdoor activities.</p>
-            </div>
-            <div class="about-image">
-                <img src="guy .jpeg" alt="Devang Awasthi portrait">
             </div>
         </div>
     </section>
 
+     
     <section id="skills" class="skills">
         <h2 class="section-title">My Skills</h2>
-        <div class="skills-container">
-            <div class="skill">
-                <i class="fas fa-laptop-code"></i>
-                <h3>Full Stack Developer</h3>
-            </div>
-            <div class="skill">
-                <i class="fas fa-server"></i>
-                <h3>Backend Developer</h3>
-            </div>
-            <div class="skill">
-                <i class="fas fa-code"></i>
-                <h3>Frontend Developer</h3>
-            </div>
-        </div>
         <div class="skills-container">
             <div class="skill">
                 <i class="fab fa-html5"></i>
@@ -87,7 +74,7 @@
                 <h3>MySQL</h3>
             </div>
             <div class="skill">
-                <i class="fas fa-leaf"></i>
+                <i class="fas fa-database"></i>
                 <h3>MongoDB</h3>
             </div>
         </div>
@@ -96,65 +83,61 @@
     <section id="projects" class="projects">
         <h2 class="section-title">My Projects</h2>
         <div class="projects-container">
-            <article class="project-card">
-                <h3>Fit Track - Personal Fitness Tracker</h3>
-                <p>An app where users can track workouts, calories, meals, water intake, and view fitness history. It's a full stack application for health enthusiasts.</p>
+            <div class="project-card">
+                <h3>Fit Track - Personal Fitness Tracker </h3>
+                <p>An app where users can track workouts, calories, meals, Water Intake and view fitness History. It's a full Stack Application made for who prioritise their health.</p>
                 <div class="project-links">
-                    <a href="#" class="btn" aria-label="Live Demo for Fit Track">Live Demo</a>
-                    <a href="#" class="btn" aria-label="Source Code for Fit Track">Code</a>
+                    <a href="#" class="btn">Live Demo</a>
+                    <a href="#" class="btn">Code</a>
                 </div>
-            </article>
-            <article class="project-card">
-                <h3>Chicken - Online Clothing Store</h3>
-                <p>A full stack web application where users can view products and place orders. Built to simulate a real-world shopping experience.</p>
+            </div>
+            <div class="project-card">
+                <h3>Chicken - Online Clothing Store </h3>
+                <p>A full Stack web application, where user can view products like their clothes and place orders. Build to simulate a real world shopping Experience.</p>
                 <div class="project-links">
-                    <a href="#" class="btn" aria-label="Live Demo for Chicken Store">Live Demo</a>
-                    <a href="#" class="btn" aria-label="Source Code for Chicken Store">Code</a>
+                    <a href="#" class="btn">Live Demo</a>
+                    <a href="#" class="btn">Code</a>
                 </div>
-            </article>
+            </div>
         </div>
     </section>
 
     <section id="contact" class="contact">
         <h2 class="section-title">Get In Touch</h2>
         <div class="contact-container">
-            <form class="contact-form" aria-label="Contact Form">
-                <label for="name">Name</label>
-                <input id="name" type="text" placeholder="Your Name" required>
-                <label for="email">Email</label>
-                <input id="email" type="email" placeholder="Your Email" required>
-                <label for="message">Message</label>
-                <textarea id="message" placeholder="Your Message" required></textarea>
+            <form class="contact-form">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" required></textarea>
                 <button type="submit" class="btn">Send Message</button>
             </form>
             <div class="contact-info">
                 <div class="contact-item">
                     <i class="fas fa-envelope"></i>
-                    <p><a href="mailto:devangawasthi82@gmail.com">devangawasthi82@gmail.com</a></p>
+                    <p>devangawasthi82@gmail.com</p>
                 </div>
                 <div class="contact-item">
                     <i class="fas fa-phone"></i>
-                    <p><a href="tel:+918176900770">+91 8176900770</a></p>
+                    <p>+91 8176900770 </p>
                 </div>
                 <div class="contact-item">
                     <i class="fas fa-map-marker-alt"></i>
-                    <p>Kanpur, India</p>
+                    <p>Kanpur , India</p>
                 </div>
                 <div class="social-links">
-                    <a href="https://github.com/devang12890" aria-label="GitHub"><i class="fab fa-github"></i></a>
-                    <a href="https://www.linkedin.com/feed/" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-                    <a href="https://www.instagram.com/dev_intellect/" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="https://github.com/devang12890"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/feed/"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://www.instagram.com/dev_intellect/"><i class="fab fa-instagram"></i></a>
                 </div>
             </div>
         </div>
     </section>
-</main>
 
-<footer>
-    <p>&copy; <span id="year"></span> Devang Awasthi. All rights reserved.</p>
-</footer>
+    <footer>
+        <p>&copy; <span id="year"></span> Devang Awasthi. All rights reserved.</p>
+    </footer>
 
-<script src="script.js"></script>
-<div class="background-blur"></div>
+    <script src="script.js"></script>
+    <div class="background-blur"></div> 
 </body>
 </html>
